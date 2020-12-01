@@ -3,8 +3,9 @@ package com.sohu.inputmethod.foreign.base.thread;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
-import android.support.test.runner.AndroidJUnit4;
 import android.util.Log;
+
+import androidx.test.runner.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

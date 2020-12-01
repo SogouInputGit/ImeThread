@@ -1,3 +1,4 @@
 include ':app'
-include ':lib_safe_lock'
-rootProject.name = "SafeReentrantLock"
+include ':lib_ime_thread'
+
+rootProject.name = "ImeThread"

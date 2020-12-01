@@ -29,7 +29,7 @@ android {
 
 dependencies {
 
-    api project(path: ':lib_safe_lock')
+    implementation project(path: ':lib_ime_thread')
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'

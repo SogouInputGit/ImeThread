@@ -4,12 +4,12 @@ import android.os.Looper;
 import android.text.TextUtils;
 
 import com.sohu.inputmethod.foreign.base.BuildConfig;
-import com.sohu.inputmethod.foreign.base.deadlock.SafeReentrantLock;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
 import java.util.concurrent.RunnableFuture;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author jiany on 2020/4/10
@@ -17,7 +17,7 @@ import java.util.concurrent.RunnableFuture;
 public class ImeThread {
 
     private static final String TAG = "ImeThread";
-    private static final SafeReentrantLock INSTANCE_LOCK = new SafeReentrantLock();
+    private static final ReentrantLock INSTANCE_LOCK = new ReentrantLock();
 
     public static final long DEFAULT_WAIT_TIMEOUT = 19 * 1000; // 19秒
     public static final long DEFAULT_EXEC_TIMEOUT = 5 * 1000; // 5秒
